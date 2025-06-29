@@ -28,14 +28,14 @@ namespace MIM40kFactions.Ideology
         static HarmonyPatches()
         {
             Harmony harmony = new Harmony("rimworld.emitbreaker.MIM.WH40k.Ideology");
-            harmony.Patch(AccessTools.Method(typeof(Pawn_StyleObserverTracker), "StyleObserverTick"), new HarmonyMethod(typeof(EMWH_IdeologyPatch).GetMethod("StyleObserverTickPrefix"))); 
+            harmony.Patch(AccessTools.Method(typeof(Pawn_StyleObserverTracker), "StyleObserverTickInterval", new System.Type[1] { typeof(int) }), new HarmonyMethod(typeof(EMWH_IdeologyPatch).GetMethod("StyleObserverTickIntervalPrefix"))); 
          }
     }
 
     public class EMWH_IdeologyPatch
     {
         [HarmonyPrefix]
-        public static void StyleObserverTickPrefix(Pawn_StyleObserverTracker __instance)
+        public static void StyleObserverTickIntervalPrefix(Pawn_StyleObserverTracker __instance)
         {
             if (ModsConfig.IsActive("emitbreaker.MIM.WH40k.CSM.TS") && __instance.pawn.health.hediffSet.HasHediff(HediffDef.Named("EMTS_RubricofAhriman")))
                 return;

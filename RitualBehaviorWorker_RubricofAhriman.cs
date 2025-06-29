@@ -108,7 +108,7 @@ namespace MIM40kFactions.Ideology
         {
             if (!ModsConfig.IsActive("emitbreaker.MIM.WH40k.Core"))
                 return true;
-            if (targetPawn.genes.HasGene(DefDatabase<GeneDef>.GetNamed("EMSM_AdeptusAstartes_BodySize")))
+            if (targetPawn.genes.HasActiveGene(DefDatabase<GeneDef>.GetNamed("EMSM_AdeptusAstartes_BodySize")))
             {
                 if (showMessages)
                 {

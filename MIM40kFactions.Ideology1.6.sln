@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.2.32616.157
+VisualStudioVersion = 17.14.36221.1 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MIM40kFactions.Ideology", "MIM40kFactions.Ideology.csproj", "{92F30D7A-0F9E-4053-B76E-7BBC44C0C251}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MIM40kFactions.Ideology1.6", "MIM40kFactions.Ideology1.6.csproj", "{92F30D7A-0F9E-4053-B76E-7BBC44C0C251}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {EA9D4FEA-AD60-4B09-BC60-1B926332BD30}
+		SolutionGuid = {3DA162CA-5D72-4BBF-A1EF-C7EEBDE882C7}
 	EndGlobalSection
 EndGlobal
